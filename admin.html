@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Craft Coffee - Menú y Pedidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid d-flex p-0">
+        <div class="row w-100 m-0">
+            <!-- Columna izquierda (Logo + Menú Vertical) -->
+            <div class="col-12 col-md-3 col-lg-2 bg-dark text-white p-4 full-height">
+                <!-- Logo -->
+                <div class="text-center mb-4">
+                    <img src="logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                </div>
+
+                <!-- Menú Vertical -->
+                <div class="d-flex flex-column">
+                    <a href="#" class="text-white mb-3 text-decoration-none">Inicio</a>
+                    <a href="#" class="text-white mb-3 text-decoration-none">Carta</a>
+                    <a href="#" class="text-white mb-3 text-decoration-none">Servicios</a>
+                    <a href="#" class="text-white mb-3 text-decoration-none">Pedidos</a>
+                    <a href="#" class="text-white mb-3 text-decoration-none">Contacto</a>
+                </div>
+            </div>
+
+            <!-- Columna derecha (Contenido + Breadcrumb) -->
+            <div class="col-12 col-md-9 col-lg-10 p-4 main-content">
+                <!-- Breadcrumb -->
+                <div class="d-flex justify-content-end mb-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                            <li class="breadcrumb-item"><a href="#">Carta</a></li>
+                            <li class="breadcrumb-item"><a href="#">Haz tu pedido</a></li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="text-center mt-4">
+                    <h1>Craft Coffee</h1>
+                </div>
+                <!-- Barra de Progreso -->
+                <div class="mt-4">
+                    <h5>Satisfacción de nuestros clientes</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                    <!-- Botones con modales y tooltips -->
+                    <div class="mt-4 d-flex justify-content-center">
+                        <!-- Botón verde con primer modal y tooltip -->
+                        <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="Ver más detalles sobre nuestros productos">
+                            Ver más detalles
+                        </button>
+
+                        <!-- Botón azul con segundo modal y tooltip -->
+                        <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-toggle="tooltip" title="Descubre más sobre nuestra historia">
+                            Personal
+                        </button>
+
+                        <!-- Botón verde con popover -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Ubicación" data-bs-content="Nos ubicamos en la calle María Lacunza, 33 en Pamplona">
+                            Ubicación
+                        </button>
+                    </div>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    En nuestro obrador, elaboramos cada producto de manera artesanal, utilizando ingredientes frescos y de calidad, asegurando siempre el mejor sabor en cada pieza.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-success">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel2">Más Información</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nuestros fundadores han visitado gran parte del mundo para descubrir las mejores técnicas y tradiciones, trayendo lo mejor de cada lugar para ofrecerte productos únicos.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-success">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tablas lado a lado -->
+                    <div class="row p-4">
+                        <div class="col-12 col-md-8 mb-4">
+                            <h5>Top Ventas</h5>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Descripción</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Café Espresso</td>
+                                        <td>Café concentrado de alta calidad.</td>
+                                        <td>1.80 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Café Latte</td>
+                                        <td>Café espresso con leche vaporizada.</td>
+                                        <td>1.90 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Café Mocha</td>
+                                        <td>Café con chocolate y leche vaporizada.</td>
+                                        <td>2.10 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Croissant</td>
+                                        <td>Croissant de mantequilla.</td>
+                                        <td>1.50 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pan de Pueblo</td>
+                                        <td>Pan fresco y artesanal.</td>
+                                        <td>1.30 €</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Segunda tabla de ingredientes al lado derecho de la primera -->
+                        <div class="col-12 col-md-4 mb-4">
+                            <h5>Ingredientes Comunes</h5>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Ingrediente</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Café de grano</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leche vaporizada</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cacao</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Harina, azúcar y levadura</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aceite de oliva y mantequilla</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+<script>
+    // Activar los popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+    });
+</script>
+</body>
+
+</html>
